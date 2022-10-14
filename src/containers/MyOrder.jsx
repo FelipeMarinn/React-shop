@@ -9,9 +9,12 @@ const MyOrder = () => {
 	const { state, setToggleOrders } = useContext(AppContext);
 
 	const sumTotal = () => {
-		const reducer = (accumalator, currentValue) => accumalator + currentValue.price;
-		const sum = state.cart.reduce(reducer, 0);
-		return sum;
+		// const reducer = (accumalator, currentValue) => accumalator + currentValue.price;
+		// const sum = state.cart.reduce(reducer, 0);
+		// return sum
+		const initialValue = 0
+		const sum = state.cart.reduce((accumalator, currentValue) => accumalator + currentValue.price, initialValue)
+		return sum
 	}
 
 	return (

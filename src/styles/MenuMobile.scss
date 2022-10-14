@@ -1,0 +1,41 @@
+@media (max-width: 640px) {
+    .nav-mobile {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 60%;
+        height: 100vh;
+        margin-top: 60px;
+        padding-top: 20px;
+        background-color: var(--white);
+        animation: swipeLeft .40s;
+		font-weight: bold;
+        overflow-y: auto;
+    }
+	.nav-mobile ul {
+        padding: 0;
+        li {
+	    	padding: 15px 30px;
+	    	color: var(--black);
+            list-style: none;
+        }
+	}
+	.nav-mobile ul li a {
+	    color: var(--black);
+        text-decoration: none;
+	}
+    .settings-user {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .settings-user a, p {
+        padding: 15px 30px;
+        text-decoration: none;
+        color: var(--black);
+    }
+    .settings-user, .settings-user p {
+        margin-top: 30px;
+    }
+}  

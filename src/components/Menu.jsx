@@ -1,7 +1,9 @@
 import React from 'react';
 import '@styles/Menu.scss';
+import '@styles/MenuMobile.scss'
 
 const Menu = () => {
+
 	return (
 		<div className="Menu">
 			<ul>
@@ -11,7 +13,7 @@ const Menu = () => {
 				<li>
 					<a href="/">My account</a>
 				</li>
-				<li>
+				<li className='sing-out'>
 					<a href="/">Sign out</a>
 				</li>
 			</ul>
